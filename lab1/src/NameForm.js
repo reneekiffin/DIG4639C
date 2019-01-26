@@ -17,10 +17,10 @@ class NameForm extends React.Component {
     alert('Name submitted: ' + this.state.value);
     event.preventDefault();
 
-    if (this.state.value.match (/[a-zA-Z]+/)) {
+    if (this.state.value.match (/^[a-zA-Z]+$/)) {
       this.setState({nameAvailable:true});
     }
-    else{
+    else {
       alert('This input is not a name');
       this.setState({isValid:true})
     };
