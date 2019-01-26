@@ -21,7 +21,9 @@ class NameForm extends React.Component {
       this.setState({nameAvailable:true});
     }
     else {
-      alert('This input is not a name');
+
+
+      document.write("<span style=\"color:red;\">Name must include letters only<\/span>");
       this.setState({isValid:true})
     };
 
@@ -50,6 +52,8 @@ class NameForm extends React.Component {
   else {
     return (<div>Good Morning {this.state.value}</div>);
   }
+
+
 
 
   }
