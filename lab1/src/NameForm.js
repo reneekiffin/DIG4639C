@@ -14,10 +14,10 @@ class NameForm extends React.Component {
   }
 
   handleSubmit(event) {
-    //alert('A name was submitted: ' + this.state.value);
-    //event.preventDefault();
+    alert('Name submitted: ' + this.state.value);
+    event.preventDefault();
 
-    if (/[a-zA-Z]+/.text(this.state.value)) {
+    if (this.state.value.match (/[a-zA-Z]+/)) {
       this.setState({nameAvailable:true});
     }
     else{
@@ -25,12 +25,14 @@ class NameForm extends React.Component {
       this.setState({isValid:true})
     };
 
-  event.preventDefaultfault();
+
+
+
+  event.preventDefault();
 
   }
 
   render() {
-    //let returnArray =[]//missing code
 
     if(!this.state.nameAvailable){
 
@@ -44,12 +46,10 @@ class NameForm extends React.Component {
 
       </form>
     );
-  } else {
-    return (<div>Good Morning{this.state.value}</div>);
   }
-
-    if (!this.state.isValid){
-      return (<p>Must be a valid a-Z or A-Z</p>);}
+  else {
+    return (<div>Good Morning {this.state.value}</div>);
+  }
 
 
   }
