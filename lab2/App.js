@@ -18,7 +18,6 @@ export default class App extends React.Component {
       <View style={styles.container} flexDirection="column" alignItems='stretch'>
         <View><TextInput style={styles.textInput} onChangeText={this.onChange} placeholder="Enter your name"></TextInput></View>
         <TouchableOpacity style={styles.buttonStyle} onPress={this.onPress}><Text style={styles.buttonText}>Submit</Text></TouchableOpacity>
-        {!this.state.valid ? (<Text style={styles.defaultText}>Error!</Text>) : null}
       </View>
     );
   }
