@@ -16,11 +16,12 @@ const STORAGE_KEY = "@SmarterWeather:zip";
 
 import OpenWeatherMap from "./open_weather_map";
 
-// This version uses flowers.png from local assets
-//import PhotoBackdrop from "./PhotoBackdrop/local_image";
 
-// This version pulls a specified photo from the camera roll
- import PhotoBackdrop from './PhotoBackdrop/local_image';
+// This version uses flowers.png from local assets
+import PhotoBackdrop from "./PhotoBackdrop/local_image";
+
+//This version pulls a specified photo from the camera roll
+//import PhotoBackdrop from './PhotoBackdrop/local_image';
 
 class WeatherProject extends Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class WeatherProject extends Component {
     this.state = { forecast: null };
   }
 
-    
+
   checkMultiPermissions = async() => {
     const { Permissions, FileSystem } = Expo;
     console.log(FileSystem.documentDirectory);
@@ -63,8 +64,9 @@ class WeatherProject extends Component {
             }
           }
       }
-      
-  }      
+
+  }
+
   _retrieveData = async () => {
       console.log("Retrieving Data");
         try {
@@ -135,12 +137,20 @@ class WeatherProject extends Component {
       );
     }
 
+
+
+
+
+
+
+
     return (
+
       <PhotoBackdrop image={this.state.newPostImage} >
         <View style={styles.overlay}>
           <View style={styles.row}>
             <Text style={textStyles.mainText}>
-              Forecast for
+              Weather Forecast for
             </Text>
 
             <View style={styles.zipContainer}>
@@ -156,7 +166,7 @@ class WeatherProject extends Component {
             <LocationButton onGetCoords={this._getForecastForCoords} />
           </View>
           <View style={styles.row}>
-            <Button onPress={this.checkMultiPermissions} label="Choose Image"></Button>
+            <Button onPress={this.checkMultiPermissions} label="Change Background"></Button>
           </View>
           {content}
 
