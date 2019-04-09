@@ -12,6 +12,8 @@ import Forecast from "./Forecast";
 import LocationButton from "./LocationButton";
 import textStyles from "./styles/typography.js";
 
+import Clock from "./Clock/index.js";
+
 const STORAGE_KEY = "@SmarterWeather:zip";
 
 import OpenWeatherMap from "./open_weather_map";
@@ -165,9 +167,13 @@ class WeatherProject extends Component {
           <View style={styles.row}>
             <LocationButton onGetCoords={this._getForecastForCoords} />
           </View>
+
           <View style={styles.row}>
             <Button onPress={this.checkMultiPermissions} label="Change Background"></Button>
           </View>
+
+          <Clock/>
+
           {content}
 
         </View>
