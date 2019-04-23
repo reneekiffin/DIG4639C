@@ -1,5 +1,7 @@
 import React, {ReactNode, SyntheticEvent} from 'react';
  import ApiCalendar from 'react-google-calendar-api';
+ import logo from './logo.svg';
+ import './App.css';
 
  export default class DoubleButton extends React.Component {
      constructor(props) {
