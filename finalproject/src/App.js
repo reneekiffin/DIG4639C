@@ -1,25 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="Logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Get Started
+          Edit <code>src/App.js</code> and save to reload.
         </p>
-
-
         <a
           className="App-link"
-          href="#"
+          href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visit Our Website
+          Learn React
         </a>
       </header>
     </div>
