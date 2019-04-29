@@ -34,7 +34,13 @@ export default class HomeScreen extends React.Component {
 
           <View style={styles.getStartedContainer}>
 
-            <Text style={styles.getStartedText}>Welcome to The Productivity App</Text>
+            <Text style={styles.getStartedText}>Welcome to The Productivity App
+            </Text>
+
+            <Text style={styles.getStartedText}>
+            Check the Weather and View your Calendar</Text>
+
+
 
           </View>
 
@@ -45,7 +51,7 @@ export default class HomeScreen extends React.Component {
           </View>
         </ScrollView>
 
-        
+
       </View>
     );
   }
