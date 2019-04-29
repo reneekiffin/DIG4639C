@@ -3,18 +3,19 @@ export const weatherConditions = {
     color: '#005BEA',
     title: 'Raining',
     subtitle: 'Get a cup of coffee',
-    icon: 'weather-rainy'
-  },
+    icon: 'weather-rainy',
+    },
   Clear: {
     color: '#f7b733',
     title: 'So Sunny',
     subtitle: 'Maybe you should grab some shades!',
-    icon: 'weather-sunny'
+    icon: 'weather-sunny',
+
   },
   Thunderstorm: {
     color: '#616161',
     title: 'A Storm is coming',
-    subtitle: 'Because Gods are angry',
+    subtitle: 'Because the Gods are angry',
     icon: 'weather-lightning'
   },
   Clouds: {
@@ -27,7 +28,7 @@ export const weatherConditions = {
   Snow: {
     color: '#00d2ff',
     title: 'Snow',
-    subtitle: 'Get out and build a snowman for me',
+    subtitle: 'Snowangels?',
     icon: 'weather-snowy'
   },
   Drizzle: {
