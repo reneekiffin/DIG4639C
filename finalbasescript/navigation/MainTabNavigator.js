@@ -18,8 +18,8 @@ HomeStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-cloud${focused ? '' : '-outline'}`
-          : 'md-cloud'
+          ? `ios-information-circle${focused ? '' : '-outline'}`
+          : 'md-information-circle'
       }
     />
   ),
@@ -34,7 +34,7 @@ LinksStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-calendar' : 'md-calendar'}
+      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
     />
   ),
 };
